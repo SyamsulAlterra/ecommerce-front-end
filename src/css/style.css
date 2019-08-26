@@ -1,0 +1,161 @@
+.carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  margin: 0px 20px;
+}
+.carousel-indicators li:hover {
+  opacity: 1;
+  border-radius: 50%;
+}
+.welcomePage .bm-logo-box {
+  width: 400px;
+  margin: 50px auto;
+}
+.welcomePage .bm-logo-box .bm-logo {
+  height: 331px;
+  width: 400px;
+  text-align: center;
+  background-color: white;
+}
+.align-center {
+  text-align: center;
+}
+.height200 {
+  height: 200px;
+}
+.centering {
+  margin: 0px auto !important;
+}
+.black {
+  color: black;
+}
+.white {
+  color: white !important;
+}
+.carousel-item {
+  height: 450px;
+}
+.cardGrid {
+  height: 580px;
+  overflow: scroll;
+}
+.itemCard {
+  width: 500px;
+  margin: 0px auto;
+}
+.search p {
+  width: 120px;
+}
+.search img {
+  height: 25px;
+}
+.search .searhBar {
+  height: 20px !important;
+}
+.getStartedBox {
+  background-color: black;
+  color: white;
+  margin: 70px auto;
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 142px 0px;
+}
+.userProfile img {
+  margin: 30px auto;
+  background-color: black;
+  height: 105px;
+  width: 157px;
+  border-radius: 0%;
+}
+.userProfile .card {
+  height: 165px;
+  width: 400px;
+  margin: 0px auto;
+}
+#v-pills-tab {
+  margin: 0px auto;
+}
+.topUpForm .getStartedBox {
+  padding: 105px 0px;
+}
+.addForm .getStartedBox {
+  background-color: white;
+  margin: 0px auto;
+  height: 450px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 2px 0px;
+}
+.font-black {
+  color: black;
+}
+.cardQty {
+  margin: 1px auto;
+  width: 50px;
+}
+.sellGrid {
+  height: 570px;
+  width: 100%;
+  overflow: scroll;
+}
+.bagQty {
+  margin: 1px auto;
+  width: 5px !important;
+}
+.pay button {
+  margin-left: 215px !important;
+}
+.delete button {
+  margin-right: 215px !important;
+}
+.bag {
+  height: 25px;
+  width: 40px;
+}
+.profile-icon {
+  height: 30px;
+  border-radius: 50%;
+}
+.hShop {
+  height: 550px;
+}
+.myshop-button-div {
+  width: 100px;
+  text-align: center;
+}
+.myshop-button-div .myshop-button {
+  height: 25px !important;
+  width: 80px !important;
+  padding: 0px !important;
+  margin: 8px auto !important;
+}
+.bg-black {
+  background-color: black;
+}
+.hovering:hover {
+  border: 2px black solid;
+}
+.transactionHistory .transactionDetail img {
+  height: 100px;
+  width: 100px;
+}
+.transactionHistory .transactionDetail .pButton {
+  height: 40px;
+}
+.weather-image {
+  height: 100px;
+}
+.align-right {
+  text-align: center;
+}
+.checkWeatherButton {
+  margin-left: 510px !important;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}

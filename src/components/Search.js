@@ -1,0 +1,106 @@
+import React from "react";
+import { connect } from "unistore/react";
+import { actions } from "./store";
+import { withRouter } from "react-router-dom";
+import logo from "../logo.svg";
+import Axios from "axios";
+
+class Search extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ""
+    };
+  }
+
+  // componentWillUnmount = () => {
+  //   this.setState({ text: "" });
+  // };
+
+  handleSearchInput = e => {
+    let t = e.target.value;
+    this.setState({ text: t });
+    this.props.setSearchText(t);
+  };
+  tidyUpData = arr => {
+    let dataLength = arr.length;
+    let a = Math.ceil(dataLength / 2);
+    let myData = [];
+
+    for (let i = 0; i < a; i++) {
+      myData.push([arr[i * 2], arr[2 * i + 1]]);
+    }
+    return myData;
+  };
+  search = async () => {
+    let config = {
+      method: "post",
+      url: "http://127.0.0.1:5001/user/all",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token")
+      },
+      params: {
+        text: this.state.text
+      }
+    };
+
+    let response = await Axios(config);
+    let myData = this.tidyUpData(response.data);
+    console.log(myData);
+    this.props.setSearchList(myData);
+    // this.props.history.push("/theMarket");
+  };
+
+  render() {
+    return (
+      <div className="search">
+        <p className="centering">
+          <img
+            src="https://www.libraries.rutgers.edu/sites/default/themes/RUL_D7/images/quicksearch-transparent.png"
+            data-toggle="collapse"
+            href="#multiCollapseExample1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample1"
+          />
+        </p>
+
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="">
+                <input type="text" onChange={this.handleSearchInput} />
+                <br />
+                <div className="centering align-center my-2">
+                  <button className="btn btn-info" onClick={this.search}>
+                    search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div class="btn-group">
+          <div
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src={logo} />
+          </div>
+          <div class="dropdown-menu">
+            <div>
+              <input type="text" className="searchBar" />
+            </div>
+          </div>
+        </div> */}
+      </div>
+    );
+  }
+}
+
+export default connect(
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, searchList",
+  actions
+)(withRouter(Search));
