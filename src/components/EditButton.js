@@ -39,7 +39,7 @@ class EditButton extends React.Component {
     let config = {
       method: "put",
       url:
-        "http://127.0.0.1:5001/user/myshop/" + this.props.value.id.toString(),
+        "api.syamsul.club/user/myshop/" + this.props.value.id.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
