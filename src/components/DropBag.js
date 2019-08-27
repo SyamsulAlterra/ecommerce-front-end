@@ -8,7 +8,7 @@ class DropBag extends React.Component {
   dropBag = async () => {
     let config = {
       method: "delete",
-      url: "api.syamsul.club/user/nota/all",
+      url: "http://api.syamsul.club/user/nota/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

@@ -7,7 +7,7 @@ const axios = require("axios");
 class SignInButton extends React.Component {
   handleLogin = async () => {
     await axios
-      .post("api.syamsul.club/welcome/login", {
+      .post("http://api.syamsul.club/welcome/login", {
         nama: this.props.username,
         password: this.props.password
       })

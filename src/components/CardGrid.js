@@ -25,7 +25,7 @@ class CardGrid extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "post",
-      url: "api.syamsul.club/user/all",
+      url: "http://api.syamsul.club/user/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -36,7 +36,7 @@ class CardGrid extends React.Component {
 
     let config2 = {
       method: "get",
-      url: "api.syamsul.club/user/nota/all",
+      url: "http://api.syamsul.club/user/nota/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

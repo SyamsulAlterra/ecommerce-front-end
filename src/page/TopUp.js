@@ -15,7 +15,7 @@ class SuccesSignUp extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "api.syamsul.club/user/status",
+      url: "http://api.syamsul.club/user/status",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

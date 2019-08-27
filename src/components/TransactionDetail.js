@@ -18,7 +18,7 @@ class TransactionDetail extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "patch",
-      url: "api.syamsul.club/user/transactions/" + this.props.id,
+      url: "http://api.syamsul.club/user/transactions/" + this.props.id,
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -31,7 +31,7 @@ class TransactionDetail extends React.Component {
   handleRate = async seller_id => {
     let config = {
       method: "post",
-      url: "api.syamsul.club/user/give_rating/" + seller_id.toString(),
+      url: "http://api.syamsul.club/user/give_rating/" + seller_id.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },

@@ -10,7 +10,7 @@ class DeleteFromBag extends React.Component {
     let config = {
       method: "patch",
       url:
-        "api.syamsul.club/user/nota/" +
+        "http://api.syamsul.club/user/nota/" +
         this.props.value.id_barang.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")

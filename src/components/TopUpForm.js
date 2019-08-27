@@ -16,7 +16,7 @@ class TopUpForm extends React.Component {
   topup = async () => {
     let config = {
       method: "put",
-      url: "api.syamsul.club/user/topup",
+      url: "http://api.syamsul.club/user/topup",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },

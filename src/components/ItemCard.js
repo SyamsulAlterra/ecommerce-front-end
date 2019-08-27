@@ -20,7 +20,7 @@ class ItemCard extends React.Component {
   addToBag = async () => {
     let config = {
       method: "get",
-      url: "api.syamsul.club/user/beli/" + this.props.value.id.toString(),
+      url: "http://api.syamsul.club/user/beli/" + this.props.value.id.toString(),
       params: {
         qty: this.state.qty
       },

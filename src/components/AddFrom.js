@@ -35,7 +35,7 @@ class AddForm extends React.Component {
   addStuff = async () => {
     let config = {
       method: "post",
-      url: "api.syamsul.club/user/myshop",
+      url: "http://api.syamsul.club/user/myshop",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },

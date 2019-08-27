@@ -35,7 +35,7 @@ class Search extends React.Component {
   search = async () => {
     let config = {
       method: "post",
-      url: "api.syamsul.club/user/all",
+      url: "http://api.syamsul.club/user/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },

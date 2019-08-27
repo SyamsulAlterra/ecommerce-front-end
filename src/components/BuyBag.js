@@ -8,7 +8,7 @@ class BuyBag extends React.Component {
   payBag = async () => {
     let config = {
       method: "post",
-      url: "api.syamsul.club/user/nota/all",
+      url: "http://api.syamsul.club/user/nota/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

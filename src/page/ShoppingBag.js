@@ -30,7 +30,7 @@ class ShoppingBag extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "api.syamsul.club/user/nota/all",
+      url: "http://api.syamsul.club/user/nota/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

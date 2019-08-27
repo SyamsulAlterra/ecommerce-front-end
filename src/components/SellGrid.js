@@ -24,7 +24,7 @@ class SellGrid extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "api.syamsul.club/user/myshop",
+      url: "http://api.syamsul.club/user/myshop",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

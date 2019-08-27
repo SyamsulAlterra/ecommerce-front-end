@@ -21,7 +21,7 @@ class ShoppingCard extends React.Component {
   validateQty = async () => {
     let config = {
       method: "put",
-      url: "api.syamsul.club/user/nota/" + this.props.value.id_barang,
+      url: "http://api.syamsul.club/user/nota/" + this.props.value.id_barang,
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },

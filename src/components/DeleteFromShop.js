@@ -10,7 +10,7 @@ class DeleteFromBag extends React.Component {
     let config = {
       method: "delete",
       url:
-        "api.syamsul.club/user/myshop/" + this.props.value.id.toString(),
+        "http://api.syamsul.club/user/myshop/" + this.props.value.id.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
