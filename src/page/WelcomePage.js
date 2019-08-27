@@ -2,12 +2,14 @@ import React from "react";
 import { connect } from "unistore/react";
 import { actions } from "../components/store";
 import HeaderWelcome from "../components/HeaderWelcome";
+import ForgotPassword from "../components/ForgotPassword";
 
 class WelcomePage extends React.Component {
   render() {
     return (
       <div className="welcomePage">
         <HeaderWelcome />
+        <ForgotPassword></ForgotPassword>
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleIndicators"

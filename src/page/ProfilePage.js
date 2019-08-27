@@ -7,6 +7,7 @@ import UserProfile from "../components/UserProfile";
 import Axios from "axios";
 import TransactionElement from "../components/TransactionElement";
 import Footer from "../components/Footer";
+import EditUserPass from "../components/EditUserPass";
 
 class ProfilePage extends React.Component {
   constructor(props) {
@@ -77,6 +78,7 @@ class ProfilePage extends React.Component {
       return (
         <div className="profilePage">
           <Header />
+          <EditUserPass className="centering"></EditUserPass>
           <div class="container">
             <div class="row no-gutters">
               <div class="col">
@@ -145,6 +147,7 @@ class ProfilePage extends React.Component {
       return (
         <div className="profilePage">
           <Header />
+          <EditUserPass className="centering"></EditUserPass>
           <div class="container">
             <div class="row no-gutters">
               <div class="col">
