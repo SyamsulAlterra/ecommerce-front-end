@@ -12,6 +12,7 @@
   }
 }
 
+
 .welcomePage {
   .bm-logo-box {
     width: 400px;
@@ -63,13 +64,19 @@
 
 .search {
   p {
-    width: 120px;
+    // background-color: white;
+    width: 30px;
   }
   img {
     height: 25px;
+    margin-top: 10px; 
   }
   .searhBar {
     height: 20px !important;
+  }
+
+  .searchSpecial{
+    width: 120px;
   }
 }
 
@@ -119,6 +126,16 @@
   }
 }
 
+.shoppingBag{
+  .pay{
+    margin:0px auto;
+  }
+
+  .delete{
+    margin: 0px auto;
+  }
+}
+
 .font-black {
   color: black;
 }
@@ -139,17 +156,17 @@
   width: 5px !important;
 }
 
-.pay {
-  button {
-    margin-left: 215px !important;
-  }
-}
+// .pay {
+//   button {
+//     margin-left: 215px !important;
+//   }
+// }
 
-.delete {
-  button {
-    margin-right: 215px !important;
-  }
-}
+// .delete {
+//   button {
+//     margin-right: 215px !important;
+//   }
+// }
 
 .bag {
   height: 25px;
@@ -167,14 +184,20 @@
   height: 550px;
 }
 
+.profilePage{
+  input{
+    width: 120px;
+  }
+}
+
 .myshop-button-div {
-  width: 100px;
+  // width: 100px;
   text-align: center;
   .myshop-button {
-    height: 25px !important;
-    width: 80px !important;
+    // height: 25px !important;
+    // width: 80px !important;
     padding: 0px !important;
-    margin: 8px auto !important;
+    margin: 0px auto !important;
   }
 }
 
@@ -199,10 +222,7 @@
       width: 100px;
       // margin: 0px auto;
     }
-    button {
-      // height: 30px;
-      // width: 10px;
-    }
+
     .pButton {
       height: 40px;
       // width: 10px;
@@ -218,8 +238,10 @@
   text-align: center;
 }
 
-.checkWeatherButton {
-  margin-left: 510px !important;
+.header{
+  .checkWeatherButton {
+    margin: 0px auto !important;
+  }
 }
 
 .red {
@@ -229,3 +251,225 @@
 .green {
   color: green;
 }
+
+@media(max-width: 572px){
+  .welcomePage{
+    button{
+      font-size: 12px;
+    }
+    .bm-logo-box{
+      width: 200px;
+      .bm-logo{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  .header{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 800px){
+  .topUpForm{
+    .getStartedBox{
+      width: 300px;
+    }
+  }
+
+  .header{
+    p{
+      width: 10px;
+    }
+  }
+}
+
+@media(max-width: 460px){
+  .profilePage{
+    .card{
+      width: 300px;
+    }
+    .searchSpecial{
+      width: 100px;
+    }
+  }
+
+  .hShop{
+    a{
+      font-size: 13px;
+    }
+  }
+}
+
+@media(max-width: 620px){
+  .home{
+    .itemCard{
+      width: 330px;
+    }
+
+    .descript{
+      display: none;
+    }
+    
+
+    .card-body{
+      button{
+        height: 25px;
+        font-size: 10px; 
+      }
+
+      input{
+        width: 150px;
+      }
+
+      .cardQty{
+        width: 50px;
+      }
+    }
+  }
+
+  .shoppingBag{
+    .itemCard{
+      width: 330px;
+    }
+
+    .descript{
+      display: none;
+    }
+    
+
+    .card-body{
+      button{
+        height: 25px;
+        font-size: 10px; 
+      }
+
+      input{
+        width: 150px;
+      }
+
+      .cardQty{
+        width: 50px;
+      }
+    }
+  }
+
+  .sellCard{
+    .itemCard{
+      width: 330px;
+    }
+
+    .descript{
+      display: none;
+    }
+    
+
+    .card-body{
+      button{
+        height: 25px;
+        font-size: 10px; 
+      }
+
+      input{
+        width: 150px;
+      }
+
+      .cardQty{
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .profilePage{
+    p{
+      font-size: 12px;
+    }
+
+    button{
+      font-size: 10px;
+    }
+
+    input{
+      width: 80px;
+    }
+
+    .searchSpecial{
+      width: 120px !important;
+    }
+  }
+}
+
+@media(max-width: 680px){
+  .header{
+    .nav-item{
+      a, div{
+        font-size: 13px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .header{
+    .nav-item{
+      a, div{
+        font-size: 9px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .home{
+    div{
+      #accordionExample{
+        display: none;
+      }
+    }
+  }
+
+  // .transactionDetail{
+  //   p{
+  //     font-size: 5px;
+  //   }
+  // }
+}
+
+@media(max-width: 400px){
+  .header{
+    .nav-item{
+      a, div{
+        font-size: 8px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media(max-width: 700px){
+  .home{
+    div{
+      #accordionExample{
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 980px){
+  .search{
+    img{
+      height: 15px;
+    }
+  }
+}
+
+.header{
+  img{
+    height: 20px;
+  }
+}
+

@@ -5,6 +5,7 @@ import TopUpForm from "../components/TopUpForm";
 import { connect } from "unistore/react";
 import { actions } from "../components/store";
 import Axios from "axios";
+import Footer from "../components/Footer";
 
 class SuccesSignUp extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class SuccesSignUp extends React.Component {
       <div className="successSignUp">
         <Header />
         <TopUpForm value={this.state.status} />
+        <Footer></Footer>
       </div>
     );
   }

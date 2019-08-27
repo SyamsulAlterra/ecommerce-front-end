@@ -58,9 +58,9 @@ class Weather extends React.Component {
         <div class="accordion" id="accordionExample">
           <div class="card">
             <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-dark centering p-3 align-center checkWeatherButton"
+              <div class="checkWeatherButton centering align-center">
+                <div
+                  class="btn btn-dark centering p-3 align-center"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseOne"
@@ -68,8 +68,8 @@ class Weather extends React.Component {
                   aria-controls="collapseOne"
                 >
                   Click here to check weather
-                </button>
-              </h2>
+                </div>
+              </div>
             </div>
 
             <div

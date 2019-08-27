@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import UserProfile from "../components/UserProfile";
 import Axios from "axios";
 import TransactionElement from "../components/TransactionElement";
+import Footer from "../components/Footer";
 
 class ProfilePage extends React.Component {
   constructor(props) {
@@ -137,6 +138,7 @@ class ProfilePage extends React.Component {
               </div>
             </div>
           </div>
+          <Footer></Footer>
         </div>
       );
     } else {
@@ -166,6 +168,7 @@ class ProfilePage extends React.Component {
               </div>
             </div>
           </div>
+          <Footer></Footer>
         </div>
       );
     }

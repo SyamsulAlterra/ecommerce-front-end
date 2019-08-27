@@ -9,7 +9,7 @@ import DeleteFromShop from "./DeleteFromShop";
 class SellCard extends React.Component {
   render() {
     return (
-      <div className="">
+      <div className="sellCard">
         <div class="card my-3 mx-3 shadow hovering">
           <div class="row no-gutters">
             <div class="col-6">
@@ -22,7 +22,7 @@ class SellCard extends React.Component {
             <div class="col-6">
               <div class="card-body">
                 <h5 class="card-title">{this.props.value.nama_barang}</h5>
-                <p class="card-text">
+                <p class="card-text descript">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.

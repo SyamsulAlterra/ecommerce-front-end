@@ -12,10 +12,10 @@ class SellRow extends React.Component {
         <div className="cardRow">
           <div class="container">
             <div class="row no-gutters">
-              <div class="col px-1">
+              <div class="col-lg px-1">
                 <SellCard value={this.props.value1} />
               </div>
-              <div class="col px-1">
+              <div class="col-lg px-1">
                 <SellCard value={this.props.value2} />
               </div>
             </div>
@@ -27,7 +27,7 @@ class SellRow extends React.Component {
         <div className="cardRow">
           <div class="container">
             <div class="row no-gutters">
-              <div class="col-6 px-1">
+              <div class="col-md-6 px-1">
                 <SellCard value={this.props.value1} />
               </div>
             </div>

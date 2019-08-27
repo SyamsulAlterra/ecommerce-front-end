@@ -52,28 +52,28 @@ class TransactionDetail extends React.Component {
     console.log(this.state.ratingValue);
     return (
       <div class="transactionDetail">
-        <div class="px-5">
-          <div class="container border p-2">
+        <div class="px-0">
+          <div class="container p-0">
             <div class="row">
-              <div className="col-1">
+              <div className="col-1 p-0">
                 <p className="m-0">ID</p>
               </div>
-              <div className="col-2">
+              <div className="col-2 p-0">
                 <p className="m-0">Nama</p>
               </div>
-              <div className="col-2">
+              <div className="col-2 p-0">
                 <p className="m-0">Penjual</p>
               </div>
-              <div className="col-1">
+              <div className="col-1 p-0">
                 <p className="m-0">Qty</p>
               </div>
-              <div className="col-2">
+              <div className="col-2 p-0">
                 <p className="m-0">Satuan</p>
               </div>
-              <div className="col-2">
+              <div className="col-2 p-0">
                 <p className="m-0">Sub Total</p>
               </div>
-              <div className="col-2">
+              <div className="col-2 p-0">
                 <p className="m-0 mb-3">...</p>
               </div>
             </div>
@@ -81,22 +81,22 @@ class TransactionDetail extends React.Component {
             {this.state.detail.nota_list.map(nota => {
               return (
                 <div class="row">
-                  <div className="col-1">
+                  <div className="col-1 p-0">
                     <p className="m-0">{nota.id_barang}</p>
                   </div>
-                  <div className="col-2">
+                  <div className="col-2 p-0">
                     <p className="m-0">{nota.nama_barang}</p>
                   </div>
-                  <div className="col-2">
+                  <div className="col-2 p-0">
                     <p className="m-0">{nota.pemilik}</p>
                   </div>
-                  <div className="col-1">
+                  <div className="col-1 p-0">
                     <p className="m-0">{nota.qty}</p>
                   </div>
-                  <div className="col-2">
+                  <div className="col-2 p-0">
                     <p className="m-0">{nota.harga_satuan}</p>
                   </div>
-                  <div className="col-2">
+                  <div className="col-2 p-0">
                     <p className="m-0">{nota.sub_total}</p>
                   </div>
                   <div className="col-2 btn btn-info p-0 mb-3">

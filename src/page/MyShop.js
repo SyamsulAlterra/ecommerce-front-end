@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import SellGrid from "../components/SellGrid";
 import AddFrom from "../components/AddFrom";
+import Footer from "../components/Footer";
 
 class MyShop extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class MyShop extends React.Component {
       <div className="shoppingBag">
         <Header />
         <div class="row">
-          <div class="col-1 bg-dark hShop">
+          <div class="col-2 bg-dark hShop">
             <div
               class="nav flex-column nav-pills"
               id="v-pills-tab"
@@ -40,7 +41,7 @@ class MyShop extends React.Component {
               </a>
             </div>
           </div>
-          <div class="col-11 bg-light">
+          <div class="col-10 bg-light">
             <div class="tab-content" id="v-pills-tabContent">
               <div
                 class="tab-pane fade show active"

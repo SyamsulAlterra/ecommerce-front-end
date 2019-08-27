@@ -53,7 +53,7 @@ class ShoppingCard extends React.Component {
             <div class="col-6">
               <div class="card-body">
                 <h5 class="card-title">{this.props.value.nama_barang}</h5>
-                <p class="card-text">
+                <p class="card-text descript">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.

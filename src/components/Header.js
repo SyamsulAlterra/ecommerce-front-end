@@ -73,14 +73,15 @@ class Header extends React.Component {
             </Link>
           </li>
           <li class="nav-item">
-            <Link to="shoppingBag" className="nav-link white">
-              <p>Shopping Bag ({this.props.itemInBag})</p>
+            <Link to="shoppingBag" className="nav-link white align-center">
+              <img src='https://image.flaticon.com/icons/svg/1162/1162493.svg'></img>
+              {" " + this.props.itemInBag+""}
             </Link>
           </li>
-          <li class="nav-item">
-            <div class="nav-link white">
+          <li class="nav-item mx-2">
+            <a class="nav-link white p-0">
               <Search />
-            </div>
+            </a>
           </li>
           <li class={this.state.status}>
             <div
@@ -89,17 +90,20 @@ class Header extends React.Component {
               href="#"
               onClick={this.handleShop}
             >
-              My Shop
+              <img src ='https://image.flaticon.com/icons/svg/265/265754.svg'></img><br></br>
+               
             </div>
           </li>
           <li class="nav-item">
-            <Link to="topup" class="nav-link white" href="#">
-              Top Up
+            <Link to="topup" class="nav-link white align-center" href="#">
+              <img src='https://image.flaticon.com/icons/svg/1086/1086741.svg' alt=''></img><br></br>
+               
             </Link>
           </li>
           <li class="nav-item">
-            <Link to="profile" class="nav-link white" href="#">
-              Profile
+            <Link to="profile" class="nav-link white align-center" href="#">
+              <img src='https://image.flaticon.com/icons/svg/149/149071.svg'></img><br></br>
+               
             </Link>
           </li>
           <li class="nav-item">

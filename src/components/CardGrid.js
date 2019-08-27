@@ -30,7 +30,7 @@ class CardGrid extends React.Component {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
       params: {
-        text: ""
+        text: this.props.searchText
       }
     };
 
@@ -50,6 +50,7 @@ class CardGrid extends React.Component {
     let myData = this.tidyUpData(response.data);
     console.log(myData);
     this.props.setSearchList(myData);
+    this.props.setSearchText("")
   };
 
   render() {

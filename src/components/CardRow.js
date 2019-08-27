@@ -26,7 +26,7 @@ class CardRow extends React.Component {
         <div className="cardRow">
           <div class="container">
             <div class="row no-gutters">
-              <div class="col-6 px-1">
+              <div class="col px-1">
                 <ItemCard value={this.props.value1} />
               </div>
             </div>

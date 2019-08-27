@@ -34,6 +34,7 @@ class SignInButton extends React.Component {
     this.props.setPassword(pass);
   };
   render() {
+
     return (
       <div>
         <button
