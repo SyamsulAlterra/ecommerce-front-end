@@ -2,7 +2,7 @@ FROM nginx:stable
 MAINTAINER syamsul  "syamsul@alterra.id"
 
 RUN mkdir -p /syamsul/www/front-end
-RUN mkdir -p /alterra/logs/nginx
+RUN mkdir -p /syamsul/logs/nginx
 
 COPY default.conf /etc/nginx/conf.d/
 COPY . /syamsul/www/front-end
