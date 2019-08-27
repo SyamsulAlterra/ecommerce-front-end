@@ -10,7 +10,7 @@ class DeleteFromBag extends React.Component {
     let config = {
       method: "delete",
       url:
-        "http://api.syamsul.club/user/myshop/" + this.props.value.id.toString(),
+        this.props.baseUrl + "/user/myshop/" + this.props.value.id.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -59,6 +59,6 @@ class DeleteFromBag extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, baseUrl",
   actions
 )(withRouter(DeleteFromBag));

@@ -24,7 +24,7 @@ class SellGrid extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/myshop",
+      url: this.props.baseUrl + "/user/myshop",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -53,6 +53,6 @@ class SellGrid extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(SellGrid));

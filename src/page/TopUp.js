@@ -15,7 +15,7 @@ class SuccesSignUp extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/status",
+      url: this.props.baseUrl + "/user/status",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -37,6 +37,6 @@ class SuccesSignUp extends React.Component {
 }
 
 export default connect(
-  "token",
+  "token, baseUrl",
   actions
 )(withRouter(SuccesSignUp));

@@ -24,7 +24,7 @@ class ProfilePage extends React.Component {
   beAseller = async () => {
     let config = {
       method: "post",
-      url: "http://api.syamsul.club/user/status",
+      url: this.props.baseUrl + "/user/status",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -41,7 +41,7 @@ class ProfilePage extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/status",
+      url: this.props.baseUrl + "/user/status",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -60,7 +60,7 @@ class ProfilePage extends React.Component {
     }
     let config2 = {
       method: "get",
-      url: "http://api.syamsul.club/user/transactions",
+      url: this.props.baseUrl + "/user/transactions",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -173,6 +173,6 @@ class ProfilePage extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(ProfilePage));

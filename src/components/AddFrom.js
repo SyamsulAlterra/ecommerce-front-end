@@ -35,7 +35,7 @@ class AddForm extends React.Component {
   addStuff = async () => {
     let config = {
       method: "post",
-      url: "http://api.syamsul.club/user/myshop",
+      url: this.props.baseUrl + "/user/myshop",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -96,6 +96,6 @@ class AddForm extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(AddForm));

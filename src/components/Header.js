@@ -23,7 +23,7 @@ class Header extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/status",
+      url: this.props.baseUrl + "/user/status",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -45,7 +45,7 @@ class Header extends React.Component {
   handleShop = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/status",
+      url: this.props.baseUrl + "/user/status",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -114,6 +114,6 @@ class Header extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, itemInBag",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, itemInBag, baseUrl",
   actions
 )(withRouter(Header));

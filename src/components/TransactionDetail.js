@@ -18,7 +18,7 @@ class TransactionDetail extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "patch",
-      url: "http://api.syamsul.club/user/transactions/" + this.props.id,
+      url: this.props.baseUrl + "/user/transactions/" + this.props.id,
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -31,7 +31,7 @@ class TransactionDetail extends React.Component {
   handleRate = async seller_id => {
     let config = {
       method: "post",
-      url: "http://api.syamsul.club/user/give_rating/" + seller_id.toString(),
+      url: this.props.baseUrl + "/user/give_rating/" + seller_id.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -121,6 +121,6 @@ class TransactionDetail extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(TransactionDetail));

@@ -12,7 +12,8 @@ export let store = createStore({
 
   searchList: [],
   searchText: "",
-  itemInBag: 0
+  itemInBag: 0,
+  baseUrl: "http://api.syamsul.club"
 });
 export const actions = () => ({
   setItemInBag(state, num) {

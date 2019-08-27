@@ -10,7 +10,7 @@ class SignUpButton extends React.Component {
       alert("your password did not match");
     } else {
       await axios
-        .post("http://api.syamsul.club/welcome/signup", {
+        .post(this.props.baseUrl + "/welcome/signup", {
           nama: this.props.userSignUp,
           email: this.props.email,
           password: this.props.passwordSignUp
@@ -126,6 +126,6 @@ class SignUpButton extends React.Component {
 }
 
 export default connect(
-  "username, password, userSignUp, email, passwordSignUp, confirmPassword",
+  "username, password, userSignUp, email, passwordSignUp, confirmPassword, baseUrl",
   actions
 )(withRouter(SignUpButton));

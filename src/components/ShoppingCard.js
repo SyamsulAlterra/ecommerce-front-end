@@ -21,7 +21,7 @@ class ShoppingCard extends React.Component {
   validateQty = async () => {
     let config = {
       method: "put",
-      url: "http://api.syamsul.club/user/nota/" + this.props.value.id_barang,
+      url: this.props.baseUrl + "/user/nota/" + this.props.value.id_barang,
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -92,6 +92,6 @@ class ShoppingCard extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(ShoppingCard));

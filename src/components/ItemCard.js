@@ -20,7 +20,7 @@ class ItemCard extends React.Component {
   addToBag = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/beli/" + this.props.value.id.toString(),
+      url: this.props.baseUrl + "/user/beli/" + this.props.value.id.toString(),
       params: {
         qty: this.state.qty
       },
@@ -90,6 +90,6 @@ class ItemCard extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, itemInBag",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, itemInBag, baseUrl",
   actions
 )(withRouter(ItemCard));

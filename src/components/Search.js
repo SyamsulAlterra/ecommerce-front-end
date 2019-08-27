@@ -35,7 +35,7 @@ class Search extends React.Component {
   search = async () => {
     let config = {
       method: "post",
-      url: "http://api.syamsul.club/user/all",
+      url: this.props.baseUrl + "/user/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -101,6 +101,6 @@ class Search extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, searchList",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, searchList, baseUrl",
   actions
 )(withRouter(Search));

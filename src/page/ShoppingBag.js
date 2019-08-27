@@ -30,7 +30,7 @@ class ShoppingBag extends React.Component {
   componentDidMount = async () => {
     let config = {
       method: "get",
-      url: "http://api.syamsul.club/user/nota/all",
+      url: this.props.baseUrl + "/user/nota/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -87,6 +87,6 @@ class ShoppingBag extends React.Component {
 }
 
 export default connect(
-  "token",
+  "token, baseUrl",
   actions
 )(withRouter(ShoppingBag));

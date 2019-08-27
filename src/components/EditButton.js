@@ -39,7 +39,7 @@ class EditButton extends React.Component {
     let config = {
       method: "put",
       url:
-        "http://api.syamsul.club/user/myshop/" + this.props.value.id.toString(),
+        this.props.baseUrl + "/user/myshop/" + this.props.value.id.toString(),
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -145,6 +145,6 @@ class EditButton extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(EditButton));

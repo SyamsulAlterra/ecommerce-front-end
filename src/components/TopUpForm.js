@@ -16,7 +16,7 @@ class TopUpForm extends React.Component {
   topup = async () => {
     let config = {
       method: "put",
-      url: "http://api.syamsul.club/user/topup",
+      url: this.props.baseUrl + "/user/topup",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       },
@@ -70,6 +70,6 @@ class TopUpForm extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(TopUpForm));

@@ -8,7 +8,7 @@ class DropBag extends React.Component {
   dropBag = async () => {
     let config = {
       method: "delete",
-      url: "http://api.syamsul.club/user/nota/all",
+      url: this.props.baseUrl + "/user/nota/all",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -83,6 +83,6 @@ class DropBag extends React.Component {
 }
 
 export default connect(
-  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token",
+  "username, password, email, userSignUp, passwordSignUp, confirmPassword, token, baseUrl",
   actions
 )(withRouter(DropBag));
