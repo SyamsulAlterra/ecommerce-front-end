@@ -13,7 +13,7 @@ export let store = createStore({
   searchList: [],
   searchText: "",
   itemInBag: 0,
-  baseUrl: "http://0.0.0.0:5001"
+  baseUrl: "https://api.syamsul.club"
 });
 export const actions = () => ({
   setItemInBag(state, num) {
