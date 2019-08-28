@@ -43,7 +43,7 @@ class SignInButton extends React.Component {
           data-toggle="modal"
           data-target="#signin"
         >
-          Continous Integration
+          Sign In
         </button>
 
         <div
