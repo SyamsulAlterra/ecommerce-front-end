@@ -8,8 +8,8 @@
 # source ~/.profile
 # echo "$DOCKERHUB_PASS" | docker login --username $DOCKERHUB_USER --password-stdin
 
-sudo docker stop 883f3618171a
-sudo docker rm 883f3618171a
+sudo docker stop 04d43bc95edb
+sudo docker rm 04d43bc95edb
 
 sudo docker rmi syamsuldocker/frontend_automate
 sudo docker pull syamsuldocker/frontend_automate
